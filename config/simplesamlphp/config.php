@@ -535,7 +535,12 @@ $config = array(
          * by checking the 'attributes' parameter in metadata on IdP hosted and SP remote.
          */
         50 => 'core:AttributeLimit',
-
+        
+        60 => array(
+            'class' => 'core:AttributeAdd',
+            'second_email' => array('jbohmer@sessionm.com'),
+         ),
+        
         /*
          * Search attribute "distinguishedName" for pattern and replaces if found
 
